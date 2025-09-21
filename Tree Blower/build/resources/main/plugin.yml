@@ -1,0 +1,25 @@
+name: Blower
+version: 1.0.0
+main: xyz.vp.moosh.blower.Blower
+api-version: 1.21
+author: YourName
+description: A plugin that blows away the closest tree
+
+commands:
+  blow:
+    description: Removes the closest tree to the player
+    usage: /blow
+    permission: blower.use
+    permission-message: You don't have permission to use this command!
+  blowhelp:
+    description: Shows help information for the blower plugin
+    usage: /blowhelp
+    permission: blower.help
+
+permissions:
+  blower.use:
+    description: Allows the player to use the /blow command
+    default: op
+  blower.help:
+    description: Allows the player to use the /blow:help command
+    default: true
